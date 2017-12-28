@@ -18,7 +18,11 @@ buildscript {
 allprojects {
     repositories {
         google()
+        maven { url "https://jitpack.io" }
+        maven { url "http://dl.bintray.com/populov/maven" }
+        maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
         jcenter()
+        mavenCentral()
     }
 }
 

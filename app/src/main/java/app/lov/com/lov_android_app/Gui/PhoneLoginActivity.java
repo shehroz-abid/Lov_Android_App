@@ -35,10 +35,10 @@ public class PhoneLoginActivity extends Activity implements View.OnClickListener
 
 
 
-        transaction =  getFragmentManager().beginTransaction();
-        transaction.add(R.id.phone_login_framelayout, new PhoneLoginFragmentA());
-        transaction.addToBackStack(null);
-        transaction.commit();
+//        transaction =  getFragmentManager().beginTransaction();
+//        transaction.add(R.id.phone_login_framelayout, new PhoneLoginFragmentA());
+//        transaction.addToBackStack(null);
+//        transaction.commit();
 
 
 
