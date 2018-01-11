@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_main_txt"
+        android:layout_above="@+id/status_logo_img"
+        android:text="Searching for someone special"
+        android:textColor="@color/colorOrange"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logosearching"
+        android:id="@+id/status_logo_img"
+        android:padding="25dp"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_sub_txt"
+        android:layout_below="@+id/status_logo_img"
+        android:text="You are invisible"
+        android:textColor="@color/colorGrey"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

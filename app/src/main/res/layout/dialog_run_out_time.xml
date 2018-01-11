@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:text="You are run of time
+please wait 30 mins"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/colorOrange"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or for 10 more minutes"
+        android:id="@+id/text_dialog"
+        android:layout_below="@+id/a"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:text="OK"
+        android:id="@+id/btn_dialog"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/text_dialog"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/watchad"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:id="@+id/or_txt"
+        android:layout_below="@+id/btn_dialog"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_for_unlimited"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/or_txt"
+        android:background="@drawable/forunlimited"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_for_unlimited"
+        android:background="@drawable/purchase"/>
+</RelativeLayout>
