@@ -52,8 +52,6 @@ public class PhoneLoginActivity extends Activity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-
-
         // implements your things
     }
 }

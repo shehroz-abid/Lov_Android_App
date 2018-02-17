@@ -8,6 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.novoda:bintray-release:0.8.0'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -17,15 +18,28 @@ buildscript {
 
 allprojects {
     repositories {
+        jcenter()
+        maven { url "https://maven.google.com" }
         google()
         maven { url "https://jitpack.io" }
-        maven { url "http://dl.bintray.com/populov/maven" }
-        maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
-        jcenter()
         mavenCentral()
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext {
+    userOrg = 'yarolegovich'
+    groupId = 'com.yarolegovich'
+    uploadName = 'DiscreteScrollView'
+    description = ''
+    publishVersion = '1.4.4'
+    licences = ['Apache-2.0']
+
+    compileSdkVersion = 27
+    buildToolsVersion = '26.0.2'
+    targetSdkVersion = 27
+
+    supportLibVersion = '27.0.2'
 }
